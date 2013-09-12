@@ -22,7 +22,7 @@ h1 img{
 
 #content{
 	width: 612px;
-	background: #466287 url(corner.jpg) top right no-repeat;
+	background: #466287 url(images/corner.jpg) top right no-repeat;
 	line-height: 22px;
 	font-size: 18px;
 	font-family: Georgia, times, serif;
@@ -57,14 +57,6 @@ p.copy {
 	font-size: 12px;
 	color: #444444;
 	padding: 5px 0 5px 0;
-}
-
-p.social {
-	background: url(images/twitter.jpg) center right no-repeat;
-	float: right;
-	font-size: 12px;
-	color: #444444;
-	padding: 5px 30px 5px 0;
 }
 
 p.tagline {
