@@ -1,13 +1,13 @@
 body {
 	background: #21211f;
-	width: 702px;
+	width: 800px;
 	font-family: helvetica, arial, sans-serif;
 	margin: 0 auto;
 	padding: 40px 0 0 0;
 }
 
 .header{
-	width: 702px;
+	width: 800px;
 	float: left;
 	clear: both;
 	padding: 0;
@@ -21,7 +21,7 @@ h1 img{
 }
 
 #content{
-	width: 640px;
+	width: 720px;
 	background: #466287 url(images/corner.jpg) top right no-repeat;
 	line-height: 22px;
 	font-size: 18px;
@@ -66,35 +66,4 @@ p.tagline {
 	font-size: 18px;
 	color: #666666;
 	padding: 15px 52px 0 0;
-}
-
-.form{
-	margin: 15px 0;
-	padding: 20px 0 20px 0;
-	background: url(form1.jpg) no-repeat;
-	font-family: helvetica, arial, sans-serif;
-}
-
-.formname{
-	background: #FFFFFF;
-	font-family: helvetica, arial, sans-serif;
-	color: #000000;
-	padding: 10px;
-	border: 1px solid #30435D;
-	font-size: 18px;
-	margin: 0 15px 0 0;
-	width: 170px;
-	font-weight: bold;
-}
-
-.sendform{
-	background: #6288BC;
-	font-family: helvetica, arial, sans-serif;
-	color: #ffffff;
-	cursor: pointer;
-	font-size: 18px;
-	padding: 10px;
-	border: 1px solid #7DAEF0;
-	margin: 0 0 0 0;
-	font-weight: bold;
 }
