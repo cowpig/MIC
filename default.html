@@ -7,8 +7,11 @@
 <title>Machine Intelligence Cup</title>
 	<link rel="stylesheet" href="style.css" type="text/css" media="screen" />
 <style type="text/css">.cf-hidden { display: none; } .cf-invisible { visibility: hidden; }</style>
+
+<script type="text/javascript" src="js/HexagonTools.js"></script>
 </head>
-<body>
+
+<body onload="demo(false)">
 <div class="header">
 <h1><a href="#" title="Logo"><img src="images/logo.png" alt="Shoddy, half-baked logo" /></a></h1>
 	<p class="tagline">
@@ -19,23 +22,50 @@
 	<p>
 		The Machine Intelligence Cup is a competition that will be held in the summer of 2014 in Montreal, QC. It will consist of a game, called <a href="tutorial.html">Hex</a>, for which participants will write artificial players. The programs written by participants will then play each other, recieve rankings, and the top players will compete at an event, with the final games displayed on a screen in front of a live audience!
 	</p>
+
 	<p>
 		It is currently under development, and we need lots more help!
 	</p>
+
 	<p>
-		The back-end of the game is complete, and a (very) preliminary UI has been written. <a href="tutorial.html">Here is a quick tutorial</a> explaining the basics of how it works, and <a href="hex_grid_demo.html">here is a bare-bones demo</a> of what it might look like in action.
+		Below is a demo of the game between two players whose logic was:
+		<ul>
+			<li>
+				If the enemy base is in sight, attack it
+			</li>
+			<li>
+				Otherwise, choose a move at random for all the available options
+			</li>
+		</ul>
 	</p>
+
+	<p>
+		<center>
+			<canvas id="hexCanvas" width="700" height="550" style="width:700px;height:550px">
+			</canvas>
+		</center>
+	</p>
+
+	<p>
+		<center><input type="button" onclick="demo(true)" value="play demo" /></center>
+	</p>
+
+	<p>
+		The back-end of the game is complete, and a (very) preliminary UI has been written. <a href="tutorial.html">Here is a quick tutorial</a> explaining the basics of how it works,
+	</p>
+	
 	<p>
 		We currently need:
+		<ul>
+			<li><em>Web designers/developers</em> to work on the <a href="https://github.com/cowpig/MIC">webpage</a></li>
+			<li><em>Graphic Designer(s)</em> to create a better logo, promotional material, game pieces, and generally make this thing look good.</li>
+			<li><em>JS/Coffeescript Developer(s)</em> to do the GUI/Front end of <a href="tutorial.html">Hex</a></li>
+			<li><em>Backend Developer(s)</em> to do in-game client/server interactions for <a href="tutorial.html">Hex</a></li>
+			<li><em>Backend Developer(s)/Sys admin</em> to set up virtual environments to run participants' code serverside and integrate that output with the game's API</li>
+			<li><em>Organizers</em> to speak to venues, prospective sponsors, schools, participants, etc</li>
+		</ul>
 	</p>
-	<ul>
-		<li><em>Web designers/developers</em> to work on the <a href="https://github.com/cowpig/MIC">webpage</a></li>
-		<li><em>Graphic Designer(s)</em> to create a better logo, promotional material, game pieces, and generally make this thing look good.</li>
-		<li><em>JS/Coffeescript Developer(s)</em> to do the GUI/Front end of <a href="tutorial.html">Hex</a></li>
-		<li><em>Backend Developer(s)</em> to do in-game client/server interactions for <a href="tutorial.html">Hex</a></li>
-		<li><em>Backend Developer(s)/Sys admin</em> to set up virtual environments to run participants' code serverside and integrate that output with the game's API</li>
-		<li><em>Organizers</em> to speak to venues, prospective sponsors, schools, participants, etc</li>
-	</ul>
+	
 	<p>
 		Send an email to <a href="mailto:max@machineintelligencecup.com">max@machineintelligencecup.com</a> if you are interested in volunteering!
 	</p>
